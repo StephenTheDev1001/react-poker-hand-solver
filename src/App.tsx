@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import './App.css'
 import handChecker from './handChecker/handChecker'
+import Deck from './components/Deck'
 
-const App = () => {
-	const [hand, setHand]: [(string | null)[], any] = useState([
+const App: React.FC = () => {
+	const [hand, setHand] = useState<(string | null)[]>([
 		null,
 		null,
 		null,
@@ -11,10 +12,14 @@ const App = () => {
 		null,
 	])
 
-	// hand is full of strings
+	// boolean that determines if hand is full
 	const handFull = hand.every((card) => typeof card === 'string')
 
-	return <div className='App'></div>
+	return (
+		<div className='App'>
+			<Deck hand={hand} setHand={setHand} />
+		</div>
+	)
 }
 
 export default App
