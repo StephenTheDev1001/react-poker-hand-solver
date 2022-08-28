@@ -18,13 +18,13 @@ const SelectedCards = (props: Props) => {
 
 	return (
 		<div className='selected-cards-container top-0 sticky bg-gray-600 text-white'>
-			<div className='flex justify-center'>
+			<div className='flex justify-center p-6'>
 				{hand.map((card) => {
 					return <SelectedCard hand={hand} setHand={setHand} card={card} />
 				})}
 			</div>
 			<div className='message flex justify-center'>
-				<h1 className='text-3xl'>{message}</h1>
+				<h1 className='text-5xl pb-6'>{message}</h1>
 			</div>
 		</div>
 	)
