@@ -18,6 +18,7 @@ const SelectedCards = (props: Props) => {
 
 	return (
 		<div className='selected-cards-container top-0 sticky bg-gray-600 text-white'>
+			<p className='text-center pt-3'>Click Cards to Select or Deselect</p>
 			<div className='flex justify-center p-6'>
 				{hand.map((card) => {
 					return <SelectedCard hand={hand} setHand={setHand} card={card} />
