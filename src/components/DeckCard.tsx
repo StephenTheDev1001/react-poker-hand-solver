@@ -1,30 +1,35 @@
 import { useState } from 'react'
 
 interface Props {
-	card: {
-		key: string
-		suit: string
-		value: number
-	}
+	card: string
+	setHand: (hand: (string | null)[]) => void
+	hand: (string | null)[]
+	key: string
 }
 
 const DeckCard = (props: Props) => {
-	const { key } = props.card
+	const { card } = props
+	const indexOfNull = props.hand.indexOf(null)
+	const indexOfCard = props.hand.indexOf(card)
+	const newHand = [...props.hand]
 
-	// selected state
-	const [selected, setSelected] = useState(false)
+	let imgSrc =
+		indexOfCard === -1
+			? require(`../assets/card_imgs/${card}.png`)
+			: require('../assets/card-back.png')
 
-	const imgSrc = selected
-		? require('../assets/card-back.png')
-		: require(`../assets/card_imgs/${key}.png`)
-
-	// onClick event arrow function
 	const onClick = () => {
-		setSelected(!selected)
+		if (indexOfCard === -1 && indexOfNull > -1) {
+			newHand[indexOfNull] = card
+			props.setHand(newHand)
+		} else {
+			newHand[indexOfCard] = null
+			props.setHand(newHand)
+		}
 	}
 	return (
-		<div className='w-36' onClick={onClick}>
-			<img src={imgSrc} alt={key} />
+		<div className='w-24' onClick={onClick}>
+			<img src={imgSrc} alt={card} />
 		</div>
 	)
 }
