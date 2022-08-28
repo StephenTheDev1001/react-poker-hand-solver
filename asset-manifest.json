@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-poker-hand-solver/static/css/main.d750296f.css",
-    "main.js": "/react-poker-hand-solver/static/js/main.f22f0a3a.js",
+    "main.css": "/react-poker-hand-solver/static/css/main.ffe43163.css",
+    "main.js": "/react-poker-hand-solver/static/js/main.5ff5e2c0.js",
     "static/media/card-back.png": "/react-poker-hand-solver/static/media/card-back.56b873b1d270cccb6911.png",
     "static/media/Qc.png": "/react-poker-hand-solver/static/media/Qc.ef480115313c1c393699.png",
     "static/media/Kh.png": "/react-poker-hand-solver/static/media/Kh.67c7a87603fdc5b5e2f7.png",
@@ -57,11 +57,11 @@
     "static/media/2h.png": "/react-poker-hand-solver/static/media/2h.c2cb81fb3d816683e15a.png",
     "static/media/2d.png": "/react-poker-hand-solver/static/media/2d.a51b192d2f2ba1fc1d53.png",
     "index.html": "/react-poker-hand-solver/index.html",
-    "main.d750296f.css.map": "/react-poker-hand-solver/static/css/main.d750296f.css.map",
-    "main.f22f0a3a.js.map": "/react-poker-hand-solver/static/js/main.f22f0a3a.js.map"
+    "main.ffe43163.css.map": "/react-poker-hand-solver/static/css/main.ffe43163.css.map",
+    "main.5ff5e2c0.js.map": "/react-poker-hand-solver/static/js/main.5ff5e2c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d750296f.css",
-    "static/js/main.f22f0a3a.js"
+    "static/css/main.ffe43163.css",
+    "static/js/main.5ff5e2c0.js"
   ]
 }
